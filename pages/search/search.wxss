@@ -1,0 +1,42 @@
+page,
+.page,
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-tab__content{
+    padding-top: 20px;
+    text-align: center;
+}
+
+.searchbar-result{
+    margin-top: 0;
+    font-size: 14px;
+}
+.searchbar-result:before{
+    display: none;
+}
+.weui-cell{
+    padding: 12px 15px 12px 35px;
+    text-align: left;
+}
+
+
+.button-sp-area{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 60%;
+}
+.mini-btn{
+    margin-right: 5px;
+}
+.input{
+  
+
+}
+.inputbutton{
+
+    width: 30%;
+}

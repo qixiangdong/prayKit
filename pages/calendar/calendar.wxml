@@ -1,0 +1,42 @@
+<view class="calendar-root">
+
+    <view class="calendar-detail">
+    <view class="calendar-detail-info">{{detailData.curInfo}}</view>
+            <view class="calendar-detail-info1">{{detailData.curInfo1}}</view>
+            <view class="calendar-detail-info1">{{detailData.curInfo2}}</view>
+
+    </view>
+
+    <view class="calendar-navbar">
+        <view class="calendar-navbar-button" bindtap="goToday">今日</view>
+        <view class="calendar-navbar-button" bindtap="goLastMonth">{{"<<"}}</view>
+        <view class="calendar-navbar-date">{{date}}</view>
+        <view class="calendar-navbar-button" bindtap="goNextMonth">{{">>"}}</view>
+        <picker class="calendar-navbar-button" mode="date" start="1900-01-01" end="2100-01-01" bindchange="bindDateChange">
+            <view>日期选择</view>
+        </picker>
+    </view>
+    <view class="calendar-head">
+        <view wx:for="一二三四五六日" wx:key="*this">{{item}}</view>
+    </view>
+    <view class="calendar-body">
+        <view class="calendar-body-rows" wx:for="123456" wx:for-index="row" wx:key="*this">
+            <view class="calendar-body-cols" wx:for="1234567" wx:for-index="col" wx:key="*this">
+                <view class="calendar-body-item {{choosed[row * 7 + col] ? 'border-radius pink-bg' : ''}} "  data-day-index="{{row * 7 + col}}" bindtap="selectDay">
+                    <view class="calendar-body-day">
+                        {{arrDays[row * 7 + col-offset+1]}}
+                    </view>
+
+                    <view class="calendar-body-dayex">
+                        {{arrInfoExShow[row * 7 + col-offset+1]}}
+                    </view>
+
+                     <view class="calendar-body-dayhj">
+                        {{hijriDays[row * 7 + col-offset+1].hDay}}
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <ad unit-id="adunit-4f30a0163d460cdb"></ad>
+</view>

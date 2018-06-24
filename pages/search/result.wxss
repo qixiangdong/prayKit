@@ -1,0 +1,8 @@
+/* pages/result/result.wxss */
+page{
+    background-color: #FFFFFF;
+}
+
+.text{
+  padding: 10px;
+}

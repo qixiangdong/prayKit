@@ -1,0 +1,81 @@
+<view class="page">
+<view class="edit" bindtap="redirectNewPage">
+<wxc-icon size="50" type="edit" ></wxc-icon>
+<text class="icon_type">按月查询</text>
+</view>
+
+
+    <view class="icons">
+    <wxc-icon size="50" type="arrow-left" bindtap="minusDate"></wxc-icon>
+    {{dateStr}}<wxc-icon size="50" type="arrow-right" bindtap="addDate"></wxc-icon>
+    </view>
+
+    <view class="addr">{{address}}</view>
+
+    <view class="page__bd_spacing">
+        <view class="weui-cells weui-cells_after-title">
+
+<view class="weui-cell sun">
+<view class="weui-cell__sunrise"><text>日出  {{times.sunrise}}</text></view>
+<view class="weui-cell__sunset"><text>日落  {{times.sunset}}</text></view>
+</view>
+
+
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                <view class="pray_name_ch">晨礼</view>
+                <view class="pray_name_en">Fajr</view>
+                </view>
+                <view class="weui-cell__ft">{{times.fajr}}</view>
+            </view>
+
+            
+        <view class="weui-cell">
+                <view class="weui-cell__bd">
+                <view class="pray_name_ch">晌礼</view>
+                <view class="pray_name_en">Dhuhr</view>
+                </view>
+                <view class="weui-cell__ft">{{times.dhuhr}}</view>
+            </view>
+
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                <view class="pray_name_ch">晡礼</view>
+                <view class="pray_name_en">Asr</view>
+                </view>
+                <view class="weui-cell__ft">{{times.asr}}</view>
+            </view>
+
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                <view class="pray_name_ch">昏礼</view>
+                <view class="pray_name_en">Maghrib</view>
+                </view>
+                <view class="weui-cell__ft">{{times.maghrib}}</view>
+            </view>
+
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                <view class="pray_name_ch">宵礼</view>
+                <view class="pray_name_en">Isha</view>
+                </view>
+                <view class="weui-cell__ft">{{times.isha}}</view>
+            </view>
+       
+       
+       
+        </view>
+
+        <view class="picker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <button type='primary' size='default'><text>选择算法: {{array[index]}}</text></button>
+        </picker>
+        </view>
+    </view>
+ <view class="foot">
+            <view class="weui-footer">
+            <view class="weui-footer__text">Copyright © 慕贤工作室</view>
+        </view>
+          </view>
+<ad unit-id="adunit-4f30a0163d460cdb"></ad>
+</view>

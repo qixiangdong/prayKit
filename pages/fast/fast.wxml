@@ -1,0 +1,48 @@
+    <view class="icons">
+    <wxc-icon size="50" type="arrow-left" bindtap="minusMonth"></wxc-icon>
+    {{dateStr}}<wxc-icon size="50" type="arrow-right" bindtap="addmonth"></wxc-icon>
+    </view>
+
+
+        <view class="picker">
+        
+        </view>
+
+<view class="addr">{{address}}</view>
+  <view class="Grid prayname">
+    <view class="Grid-cell1of6">公历</view>
+    <view class="Grid-cell1of6">封斋</view>
+    <view class="Grid-cell1of6 ">日出</view>
+    <view class="Grid-cell1of6">日落</view>
+    <view class="Grid-cell1of6">开斋</view>
+    <view class="Grid-cell1of6">伊历</view>
+  </view>
+
+  <view >
+   <block wx:for="{{monthTimes}}" wx:key="index">
+  <view wx:if="{{index+1==today}}">
+         <view class="Grid today">
+      <view class="Grid-cell1of6">{{index+1}}</view>
+      <view class="Grid-cell1of6">{{item.imsak}}</view>
+      <view class="Grid-cell1of6">{{item.sunrise}}</view>
+      <view class="Grid-cell1of6">{{item.sunset}}</view>
+      <view class="Grid-cell1of6">{{item.maghrib}}</view>
+      <view class="hijriDate">{{hijriDates[index].hMonth+'月'+hijriDates[index].hDay+'日'}}</view>
+    </view>
+     </view>
+
+<view wx:else>
+<view class="Grid">
+      <view class="Grid-cell1of6">{{index+1}}</view>
+      <view class="Grid-cell1of6">{{item.imsak}}</view>
+      <view class="Grid-cell1of6">{{item.sunrise}}</view>
+      <view class="Grid-cell1of6">{{item.sunset}}</view>
+      <view class="Grid-cell1of6">{{item.maghrib}}</view>
+           <view class="hijriDate">{{hijriDates[index].hMonth+'月'+hijriDates[index].hDay+'日'}}</view>
+    </view>
+
+</view>
+  </block>
+
+<ad unit-id="adunit-4f30a0163d460cdb"></ad>
+  </view>

@@ -1,0 +1,24 @@
+<view class="page">
+    <view class="page__hd">
+        <view class="page__title">礼拜朝向</view>
+        <view class="page__desc">请旋转手机</view>
+    </view>
+
+<view class="page__bd page__bd_spacing">
+        <view class="weui-flex">
+            <view class="weui-flex__item"><view class="placeholder">天房位于{{dqibla}}°</view></view>
+        </view>
+
+                <view class="weui-flex">
+            <view class="weui-flex__item"><view class="qibla {{isShow ? 'col' : ''}}">{{angle}}°</view></view>
+        </view>
+
+
+                <view class="weui-flex" wx:if='{{isShow}}'>
+            <view class="image"><image class='image' style="width: 100px; height: 100px;" src='../../images/kaaba.png'></image></view>
+        </view>
+
+        </view>
+
+<ad unit-id="adunit-4f30a0163d460cdb"></ad>
+</view>

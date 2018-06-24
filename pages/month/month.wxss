@@ -1,0 +1,97 @@
+
+
+.head{
+position: relative
+}
+
+.footprint{
+    text-align: left;
+  padding-left: 35px;
+}
+
+
+
+.edit{
+  text-align: right;
+  padding-right: 35px;
+}
+
+.icon_type {
+    display: block;
+    font-size: 22rpx;
+  }
+
+
+.pray_name_en{
+  color:#999; 
+}
+
+.icons{
+position: relative;
+text-align: center;
+font-size: 20px
+}
+
+.picker{
+  text-align: center;
+}
+
+.addr{
+  text-align: center;
+}
+
+.foot{
+   padding-top: 25px
+}
+
+.Grid {
+  display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.today{
+  color: green;
+}
+
+.prayname{
+  color: green;
+  font-weight: bold;
+}
+
+/*1/3平分*/
+.Grid-cell {
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  text-align: center;
+  margin: 5px 2px;
+}
+
+.Grid-cell1of6 {
+  flex: 1;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  text-align: center;
+  margin: 5px 2px;
+}
+
+.Grid-cell2of6 {
+  flex: 2;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  text-align: center;
+  margin: 5px 2px;
+}
+
+.Grid-cell3of6 {
+  flex: 3;
+  height: 30px;
+  line-height: 30px;
+  background-color: #efefef;
+  text-align: center;
+  margin: 5px 2px;
+}

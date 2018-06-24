@@ -1,0 +1,53 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/month/month",
+    "pages/search/search",
+    "pages/search/result",
+    "pages/calendar/calendar",
+    "pages/fast/fast",
+    "pages/qibla/qibla"
+    
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "navigationBarTitleText": "礼拜助手",
+    "navigationBarTextStyle":"black",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false,
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#09bb07",
+    "list": [{
+      "iconPath": "images/index.png",
+      "selectedIconPath": "images/index.png",
+      "pagePath": "pages/index/index",
+      "text": "礼拜时间"
+    },{
+      "iconPath": "images/qibla.png",
+      "selectedIconPath": "images/qibla.png",
+      "pagePath": "pages/qibla/qibla",
+      "text": "礼拜朝向"
+    },
+    {
+      "iconPath": "images/fast.png",
+      "selectedIconPath": "images/fast.png",
+      "pagePath": "pages/fast/fast",
+      "text": "斋戒时间"
+    },
+    {
+            "iconPath": "images/calendar.png",
+            "pagePath": "pages/calendar/calendar",
+            "selectedIconPath": "images/calendar.png",
+            "text": "日历"
+    }]
+  }
+}

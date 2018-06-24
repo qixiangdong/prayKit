@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-icon": "../../dist/packages/@minui/wxc-icon/dist/index"
+  },
+  "component": true,
+ "navigationBarTitleText": "斋戒时间"
+}

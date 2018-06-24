@@ -1,0 +1,49 @@
+    <view class="icons">
+    <wxc-icon size="50" type="arrow-left" bindtap="minusMonth"></wxc-icon>
+    {{dateStr}}<wxc-icon size="50" type="arrow-right" bindtap="addmonth"></wxc-icon>
+    </view>
+
+
+        <view class="picker">
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+        <button class="inputbutton mini-btn" size="mini" type="default"><text>选择算法: {{array[index]}}</text></button>
+            </picker>
+        </view>
+
+<view class="addr">{{address}}</view>
+  <view class="Grid prayname">
+    <view class="Grid-cell1of6">日期</view>
+    <view class="Grid-cell1of6">晨礼</view>
+    <view class="Grid-cell1of6 ">晌礼</view>
+    <view class="Grid-cell1of6">晡礼</view>
+    <view class="Grid-cell1of6">昏礼</view>
+    <view class="Grid-cell1of6">宵礼</view>
+  </view>
+
+  <view >
+   <block wx:for="{{monthTimes}}" wx:key="index">
+  <view wx:if="{{index+1==today}}">
+         <view class="Grid today">
+      <view class="Grid-cell1of6">{{index+1}}</view>
+      <view class="Grid-cell1of6">{{item.fajr}}</view>
+      <view class="Grid-cell1of6">{{item.dhuhr}}</view>
+      <view class="Grid-cell1of6">{{item.asr}}</view>
+      <view class="Grid-cell1of6">{{item.maghrib}}</view>
+      <view class="Grid-cell1of6">{{item.isha}}</view>
+    </view>
+     </view>
+
+<view wx:else>
+<view class="Grid">
+      <view class="Grid-cell1of6">{{index+1}}</view>
+      <view class="Grid-cell1of6">{{item.fajr}}</view>
+      <view class="Grid-cell1of6">{{item.dhuhr}}</view>
+      <view class="Grid-cell1of6">{{item.asr}}</view>
+      <view class="Grid-cell1of6">{{item.maghrib}}</view>
+      <view class="Grid-cell1of6">{{item.isha}}</view>
+    </view>
+
+</view>
+  </block>
+<ad unit-id="adunit-4f30a0163d460cdb"></ad>
+  </view>
