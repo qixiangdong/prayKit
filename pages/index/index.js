@@ -7,7 +7,7 @@ let DateFormat = require('../../utils/dateformat.js');
 let dateformat = DateFormat.dateformat;
 var qqmap = require('../../utils/qqmap-wx-jssdk.min.js');
 var demo = new qqmap({
-  key: '3E7BZ-JVUKF-GJZJZ-N56LP-675TV-FZBOK' // 必填
+  key: '3E7BZ-JVUKF-GJZJZ-N56LP-675TV' // 必填
 });
 
 Page({
